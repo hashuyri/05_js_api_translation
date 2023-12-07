@@ -1,0 +1,118 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans JP";
+    background-color: rgb(252, 226, 214);
+}
+
+header {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.translationBox {
+    padding: 30px 100px;
+    width: 500px;
+    height: 200px;
+    border: 3px #333 solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+}
+
+#inputBox p {
+    font-size: 18px;
+}
+
+.inputText {
+    margin: 20px 0;
+    padding: 10px;
+    width: 500px;
+    border: 3px #333 solid;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.inputText:focus {
+    border: orange 3px solid;
+    outline: none;
+}
+
+.submitBtn {
+    width: 100px;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #333;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    transition: .1s ease-out;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: brown;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px) translateX(0.6px);
+}
+
+.dli-caret {
+    margin: 4vh;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 4.64952em 3.375em;
+    border-top-color: currentColor;
+    border-bottom: 0;
+}
+
+.outputText {
+    margin: 0;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.langOption {
+    padding: 5px 10px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px #333 solid;
+}
+
+.langOption:focus {
+    border: orange 3px solid;
+    outline: none;
+}
